@@ -59,7 +59,7 @@ const Navbar = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Book
+                  Book Now
                 </Button>
               </NavItem>
             </NavMenu>
