@@ -1,0 +1,22 @@
+.view-container {
+  text-align: center;
+  margin: 150px 0;
+}
+
+.view-container h1 {
+  margin-bottom: 2rem;
+}
+
+.iframe-container {
+  height: calc(100vh - 80px);
+}
+
+.iframe-container > iframe {
+  border-radius: 4px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.book-btn {
+  margin-top: 4rem;
+}

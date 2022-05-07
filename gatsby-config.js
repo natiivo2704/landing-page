@@ -12,7 +12,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images/gallery`,
+        path: `${__dirname}/src/assets/images/gallery`,
       },
     },
     `gatsby-transformer-sharp`,
@@ -28,12 +28,29 @@ module.exports = {
         // https://css-tricks.com/meta-theme-color-and-trickery/
         // theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/manifest.png`, // This path is relative to the root of the site.
+        icon: `src/assets/images/manifest.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-styled-components`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
+    {
+      resolve: `gatsby-plugin-webfonts`,
+      options: {
+        fonts: {
+          google: [
+            {
+              family: "Raleway",
+              variants: ["400", "600", "800"],
+            },
+            {
+              family: "Permanent Marker",
+              variants: ["400"],
+            },
+          ],
+        },
+      },
+    },
   ],
 }

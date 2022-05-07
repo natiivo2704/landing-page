@@ -5,6 +5,7 @@ import {
   FaLinkedin,
   FaTwitter,
   FaYoutube,
+  FaEnvelope,
 } from "react-icons/fa"
 import {
   FooterContainer,
@@ -16,16 +17,21 @@ import {
   SocialIcons,
   SocialIconLink,
 } from "./FooterElements"
+import logo from "../../assets/images/logo_white.svg"
 const Footer = () => {
   return (
     <FooterContainer>
       <SocialMedia>
         <SocialMediaWrap>
           <SocialLogo to="/">
-            <SocialIcon />
+            <SocialIcon src={logo} alt="logo" />
             Natiivo 2704
           </SocialLogo>
-          <WebsiteRights>Natiivo 2704 &copy;</WebsiteRights>
+          <WebsiteRights>
+            <a href="https://www.vacasa.com/unit/82659">Natiivo 2704</a> &copy;{" "}
+            {new Date().getFullYear()}. Built by{" "}
+            <a href="http://seanli.io">seanli.io</a>
+          </WebsiteRights>
           <SocialIcons>
             <SocialIconLink
               href=""
@@ -66,6 +72,14 @@ const Footer = () => {
               rel="noopener noreferrer"
             >
               <FaLinkedin />
+            </SocialIconLink>
+            <SocialIconLink
+              href="mailto:natiivo2704@gmail.com"
+              target="_blank"
+              aria-label="Email"
+              rel="noopener noreferrer"
+            >
+              <FaEnvelope />
             </SocialIconLink>
           </SocialIcons>
         </SocialMediaWrap>

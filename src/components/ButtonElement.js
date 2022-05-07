@@ -1,20 +1,23 @@
 import styled from "styled-components"
 
-export const Button = styled.button`
-  border-radius: 4px;
-  background: ${({ primary }) => (primary ? "#49D8BE" : "#ffcccd")};
-  white-space: nowrap;
-  padding: ${({ big }) => (big ? "16px 64px" : "10px: 20px")};
+export const Button = styled.a`
   color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  background: ${({ primary }) => (primary ? "#49D8BE" : "#98EBDB")};
+  padding: ${({ big }) => (big ? "16px 48px" : "12px 16px")};
   font-size: ${({ fontBig }) => (fontBig ? "20px" : "16px")};
+  font-weight: ${({ bold }) => (bold ? 600 : 400)};
   outline: none;
   border: none;
+  white-space: nowrap;
   cursor: pointer;
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Raleway", sans-serif;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
 
   &:hover {
+    background: ${({ primary }) => (primary ? "#98EBDB" : "#49D8BE")};
     transition: all 0.3s ease-out;
-    background: ${({ primary }) => (primary ? "#98EBDB" : "#afddd5")};
   }
 
   @media screen and (max-width: 960px) {

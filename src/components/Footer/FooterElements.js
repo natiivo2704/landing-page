@@ -1,6 +1,5 @@
 import styled from "styled-components"
 import { Link } from "gatsby"
-import { DiScala } from "react-icons/di"
 
 export const FooterContainer = styled.div`
   background-color: #101522;
@@ -39,14 +38,26 @@ export const SocialLogo = styled(Link)`
   margin-bottom: 16px;
 `
 
-export const SocialIcon = styled(DiScala)`
-  margin-right: 10px;
+export const SocialIcon = styled.img`
+  height: 40px;
+  width: auto;
+  margin: 0 1rem 0 0;
 `
 
 export const WebsiteRights = styled.small`
   color: #fff;
   margin-bottom: 16px;
   font-family: "Ubuntu", sans-serif;
+
+  a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+  a:hover {
+    color: #acefe2;
+    transition: 0.2s all ease;
+  }
 `
 
 export const SocialIcons = styled.div`

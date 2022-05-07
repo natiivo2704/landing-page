@@ -9,12 +9,26 @@ const HeroSection = () => {
       <p>
         Plan your next trip to <span class="highlight-orange">Austin</span> at{" "}
         <span className="highlight-teal">
-          <a href="https://www.vacasa.com/unit/82659">Natiivo 2704</a>
+          <a
+            href="https://www.vacasa.com/unit/82659"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Natiivo 2704
+          </a>
         </span>
       </p>
       <div className="hero-btns">
-        <Button fontBig big primary>
-          Book Now
+        <Button
+          fontBig
+          big
+          primary
+          bold
+          href="https://www.vacasa.com/unit/82659"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Book A Stay
         </Button>
       </div>
     </div>

@@ -1,12 +1,11 @@
 import styled from "styled-components"
-import { DiScala } from "react-icons/di"
 import { Link } from "gatsby"
 
 export const Nav = styled.nav`
   background: ${({ active }) =>
     active
       ? "white"
-      : "linear-gradient(to bottom, rgba(255,255,255,0.6) 0%, rgba(255,255,255,0) 100%)"};
+      : "linear-gradient(to bottom, rgba(255,255,255,0.5) 0%, rgba(255,255,255,0) 100%)"};
   height: 80px;
   display: flex;
   justify-content: center;
@@ -15,10 +14,12 @@ export const Nav = styled.nav`
   position: sticky;
   top: 0;
   z-index: 999;
+  box-shadow: ${({ active }) =>
+    active ? "rgba(149, 157, 165, 0.2) 0px 8px 24px" : "none"};
 
   @media screen and (max-width: 960px) {
     background: ${({ click }) => (click ? "white" : "transparent")};
-    transition: 0.8s all ease;
+    transition: 0.3s all ease-out;
   }
 `
 
@@ -32,7 +33,7 @@ export const NavbarContainer = styled.div`
 `
 
 export const NavLogo = styled(Link)`
-  color: #141414;
+  color: #000;
   justify-self: flex-start;
   cursor: pointer;
   text-decoration: none;
@@ -41,8 +42,10 @@ export const NavLogo = styled(Link)`
   align-items: center;
 `
 
-export const NavIcon = styled(DiScala)`
-  margin: 0 0.5rem 0 2rem;
+export const NavIcon = styled.img`
+  height: 40px;
+  width: auto;
+  margin: 0 1rem 0 1rem;
 `
 
 export const MobileIcon = styled.div`
@@ -69,17 +72,20 @@ export const NavMenu = styled.ul`
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 90vh;
+    height: 50vh;
     position: absolute;
     top: ${({ click }) => (click ? "100%" : "-1000px")};
     opacity: 1;
-    transition: all 0.2s ease;
+    transition: all 0.3s ease-out;
     background: white;
   }
 `
 
 export const NavItem = styled.li`
   height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   @media screen and (max-width: 960px) {
     width: 100%;
@@ -87,23 +93,26 @@ export const NavItem = styled.li`
 `
 
 export const NavLinks = styled(Link)`
-  color: #141414;
+  color: #000;
   display: flex;
   align-items: center;
   text-decoration: none;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 1.5rem;
   height: 100%;
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
 
   @media screen and (max-width: 960px) {
     text-align: center;
     padding: 2rem;
     width: 100%;
     display: table;
+    border-top: 1px solid #eee;
+    font-size: 1.2rem;
 
     &:hover {
-      color: #ff4040;
-      transition: all 0.3s ease;
+      background-color: #eee;
+      transition: all 0.3s ease-out;
     }
   }
 `

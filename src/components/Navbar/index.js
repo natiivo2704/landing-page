@@ -11,6 +11,8 @@ import {
   NavItem,
   NavLinks,
 } from "./NavbarElements"
+import { Button } from "../ButtonElement"
+import logo from "../../assets/images/logo_black.svg"
 
 const Navbar = () => {
   const [click, setClick] = useState(false)
@@ -37,7 +39,7 @@ const Navbar = () => {
         <Nav active={scroll} click={click}>
           <NavbarContainer>
             <NavLogo to="/">
-              <NavIcon />
+              <NavIcon src={logo} alt="logo" />
               Natiivo 2704
             </NavLogo>
             <MobileIcon onClick={handleClick}>
@@ -48,10 +50,17 @@ const Navbar = () => {
                 <NavLinks to="/">Home</NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks to="/images">Images</NavLinks>
+                <NavLinks to="/gallery">Gallery</NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks to="/destinations">Destinations</NavLinks>
+                <Button
+                  primary
+                  href="https://www.vacasa.com/unit/82659"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Book
+                </Button>
               </NavItem>
             </NavMenu>
           </NavbarContainer>

@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Permanent Marker", cursive;
+}
+
+:root {
+  --white: #fff;
+
+  --primary-light: #98ebdb;
+  --primary: #58dec5;
+  --primary-dark: #3fa08d;
+
+  --secondary-light: #ffca66;
+  --secondary: #e69138;
+  --secondary-dark: #b45f06;
+
+  --tertiary-light: #ffe0e1;
+  --tertiary: #ffcccd;
+  --tertiary-dark: #ff999b;
+
+  --danger: #f56093;
+  --success: #7db954;
+}

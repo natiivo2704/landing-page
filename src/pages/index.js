@@ -1,13 +1,17 @@
 import * as React from "react"
-import HeroSection from "../components/HeroSection"
-import Image from "../components/image"
-import Layout from "../components/layout"
+import Layout from "../components/Layout/layout"
 import Seo from "../components/seo"
+import HeroSection from "../components/HeroSection"
+import Image from "../components/Image/image"
+import Matterport from "../components/Matterport"
+import Description from "../components/Description"
 
 const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
     <HeroSection />
+    <Matterport />
+    {/* <Description /> */}
     <Image />
   </Layout>
 )
