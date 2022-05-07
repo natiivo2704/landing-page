@@ -13,9 +13,9 @@ const Matterport = () => {
           height="100%"
           width="95%"
           src="https://my.matterport.com/show/?m=1JMDQMyA3GU"
-          frameborder="0"
-          allowfullscreen
-          allow="xr-spatial-tracking"
+          frameBorder={0}
+          allowFullScreen
+          // allow="xr-spatial-tracking"
         />
       </div>
       <div className="book-btn">

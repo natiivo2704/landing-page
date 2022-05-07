@@ -7,7 +7,8 @@ const HeroSection = () => {
     <div className="hero-container">
       <h1>Amazing Views</h1>
       <p>
-        Plan your next trip to <span class="highlight-orange">Austin</span> at{" "}
+        Plan your next trip to <span className="highlight-orange">Austin</span>{" "}
+        at{" "}
         <span className="highlight-teal">
           <a
             href="https://www.vacasa.com/unit/82659"

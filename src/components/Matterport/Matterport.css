@@ -1,6 +1,7 @@
 .view-container {
   text-align: center;
-  margin: 150px 0;
+  margin: 1rem 0;
+  padding: 1rem 0;
 }
 
 .view-container h1 {
@@ -18,5 +19,6 @@
 }
 
 .book-btn {
+  height: 80px;
   margin-top: 4rem;
 }

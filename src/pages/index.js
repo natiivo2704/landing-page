@@ -1,6 +1,7 @@
 import * as React from "react"
 import Layout from "../components/Layout/layout"
 import Seo from "../components/seo"
+
 import HeroSection from "../components/HeroSection"
 import Image from "../components/Image/image"
 import Matterport from "../components/Matterport"
@@ -11,7 +12,6 @@ const IndexPage = () => (
     <Seo title="Home" />
     <HeroSection />
     <Matterport />
-    {/* <Description /> */}
     <Image />
   </Layout>
 )

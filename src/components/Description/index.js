@@ -12,13 +12,11 @@ const Description = () => {
   return (
     <DescriptionLevel>
       <TopLevel>
-        <TopItem>
-          <p>Description</p>
-        </TopItem>
+        <TopItem></TopItem>
       </TopLevel>
-      <DetailLevel>Detail Level</DetailLevel>
-      <AmenityLevel>Amenity Level</AmenityLevel>
-      <MapLevel>Map Level</MapLevel>
+      <DetailLevel></DetailLevel>
+      <AmenityLevel></AmenityLevel>
+      <MapLevel></MapLevel>
     </DescriptionLevel>
   )
 }
