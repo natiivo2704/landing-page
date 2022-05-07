@@ -12,9 +12,9 @@
 }
 
 .hero-container > h1 {
+  margin-top: 0px;
   color: #fff;
   font-size: 100px;
-  margin-top: 0px;
 }
 
 .hero-container > p {
@@ -41,4 +41,26 @@
   .hero-container > p {
     font-size: 30px;
   }
+}
+
+.highlight-orange {
+  background: url("//s2.svgbox.net/pen-brushes.svg?ic=brush-5&color=eeac4d");
+  margin: -2px -6px;
+  padding: 2px 12px;
+}
+
+.highlight-teal {
+  background: url("//s2.svgbox.net/pen-brushes.svg?ic=brush-5&color=ACEFE2");
+  margin: -2px -6px;
+  padding: 2px 12px;
+}
+
+.highlight-teal > a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.highlight-teal > a:hover {
+  text-shadow: 0px 0px 12px rgb(36, 224, 188, 0.8);
+  transition: 0.3s all ease-out;
 }

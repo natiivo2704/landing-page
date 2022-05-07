@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
-    siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
+    title: `Natiivo 2704 Vacation Rental Condo`,
+    description: `Breathtaking vistas await at this luxe 27th-floor corner condo, highlighted by a private, river-view balcony. The Live Music Capital of the World is at your doorstep, with downtown hot spots just an elevator ride away. Book now!`,
+    author: `@seanli.io`,
+    siteUrl: `https://natiivo2704.com/`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -12,7 +12,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`,
+        path: `${__dirname}/src/images/gallery`,
       },
     },
     `gatsby-transformer-sharp`,
@@ -28,7 +28,7 @@ module.exports = {
         // https://css-tricks.com/meta-theme-color-and-trickery/
         // theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/manifest.png`, // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-styled-components`,

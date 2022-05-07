@@ -19,7 +19,7 @@ const Navbar = () => {
   const handleClick = () => setClick(!click)
 
   const changeNav = () => {
-    if (window.scrollY >= 80) {
+    if (window.scrollY > 0) {
       setScroll(true)
     } else {
       setScroll(false)
@@ -38,7 +38,7 @@ const Navbar = () => {
           <NavbarContainer>
             <NavLogo to="/">
               <NavIcon />
-              EXPLOR
+              Natiivo 2704
             </NavLogo>
             <MobileIcon onClick={handleClick}>
               {click ? <FaTimes /> : <FaBars />}

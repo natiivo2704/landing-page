@@ -5,11 +5,16 @@ import "./HeroSection.css"
 const HeroSection = () => {
   return (
     <div className="hero-container">
-      <h1>Travel More</h1>
-      <p>Plan your next trip today</p>
+      <h1>Amazing Views</h1>
+      <p>
+        Plan your next trip to <span class="highlight-orange">Austin</span> at{" "}
+        <span className="highlight-teal">
+          <a href="https://www.vacasa.com/unit/82659">Natiivo 2704</a>
+        </span>
+      </p>
       <div className="hero-btns">
         <Button fontBig big primary>
-          Get Started
+          Book Now
         </Button>
       </div>
     </div>

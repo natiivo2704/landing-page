@@ -5,8 +5,8 @@ import { Link } from "gatsby"
 export const Nav = styled.nav`
   background: ${({ active }) =>
     active
-      ? "#fff"
-      : "linear-gradient(to bottom, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0) 100%)"};
+      ? "white"
+      : "linear-gradient(to bottom, rgba(255,255,255,0.6) 0%, rgba(255,255,255,0) 100%)"};
   height: 80px;
   display: flex;
   justify-content: center;
@@ -17,7 +17,7 @@ export const Nav = styled.nav`
   z-index: 999;
 
   @media screen and (max-width: 960px) {
-    background: ${({ click }) => (click ? "#fff" : "transparent")};
+    background: ${({ click }) => (click ? "white" : "transparent")};
     transition: 0.8s all ease;
   }
 `
@@ -74,7 +74,7 @@ export const NavMenu = styled.ul`
     top: ${({ click }) => (click ? "100%" : "-1000px")};
     opacity: 1;
     transition: all 0.2s ease;
-    background: #fff;
+    background: white;
   }
 `
 
