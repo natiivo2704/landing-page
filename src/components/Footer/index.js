@@ -17,6 +17,7 @@ import {
   SocialIcons,
   SocialIconLink,
 } from "./FooterElements"
+import { OutboundLink } from "gatsby-plugin-google-gtag"
 import logo from "../../assets/images/logo_white.svg"
 const Footer = () => {
   return (
@@ -28,8 +29,10 @@ const Footer = () => {
             Natiivo 2704
           </SocialLogo>
           <WebsiteRights>
-            <a href="https://www.vacasa.com/unit/82659">Natiivo 2704</a> &copy;{" "}
-            {new Date().getFullYear()}.
+            <OutboundLink href="https://www.vacasa.com/unit/82659">
+              Natiivo 2704
+            </OutboundLink>{" "}
+            &copy; {new Date().getFullYear()}.
           </WebsiteRights>
           <SocialIcons>
             {/* <SocialIconLink

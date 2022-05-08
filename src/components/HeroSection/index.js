@@ -1,4 +1,5 @@
 import React from "react"
+import { OutboundLink } from "gatsby-plugin-google-gtag"
 import { Button } from "../ButtonElement"
 import "./HeroSection.css"
 
@@ -10,13 +11,13 @@ const HeroSection = () => {
         Plan your next trip to <span className="highlight-orange">Austin</span>{" "}
         at{" "}
         <span className="highlight-teal">
-          <a
+          <OutboundLink
             href="https://www.vacasa.com/unit/82659"
             target="_blank"
             rel="noopener noreferrer"
           >
             Natiivo 2704
-          </a>
+          </OutboundLink>
         </span>
       </p>
       <div className="hero-btns">

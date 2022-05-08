@@ -1,6 +1,7 @@
 import styled from "styled-components"
+import { OutboundLink } from "gatsby-plugin-google-gtag"
 
-export const Button = styled.a`
+export const Button = styled(OutboundLink)`
   color: #fff;
   text-decoration: none;
   border-radius: 4px;
