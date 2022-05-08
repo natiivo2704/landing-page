@@ -29,12 +29,11 @@ const Footer = () => {
           </SocialLogo>
           <WebsiteRights>
             <a href="https://www.vacasa.com/unit/82659">Natiivo 2704</a> &copy;{" "}
-            {new Date().getFullYear()}. Built by{" "}
-            <a href="http://seanli.io">seanli.io</a>
+            {new Date().getFullYear()}.
           </WebsiteRights>
           <SocialIcons>
-            <SocialIconLink
-              href=""
+            {/* <SocialIconLink
+              href="/"
               target="_blank"
               aria-label="Facebook"
               rel="noopener noreferrer"
@@ -42,7 +41,7 @@ const Footer = () => {
               <FaFacebook />
             </SocialIconLink>
             <SocialIconLink
-              href=""
+              href="/"
               target="_blank"
               aria-label="Instagram"
               rel="noopener noreferrer"
@@ -50,7 +49,7 @@ const Footer = () => {
               <FaInstagram />
             </SocialIconLink>
             <SocialIconLink
-              href=""
+              href="/"
               target="_blank"
               aria-label="Youtube"
               rel="noopener noreferrer"
@@ -58,7 +57,7 @@ const Footer = () => {
               <FaYoutube />
             </SocialIconLink>
             <SocialIconLink
-              href=""
+              href="/"
               target="_blank"
               aria-label="Twitter"
               rel="noopener noreferrer"
@@ -66,13 +65,13 @@ const Footer = () => {
               <FaTwitter />
             </SocialIconLink>
             <SocialIconLink
-              href=""
+              href="/"
               target="_blank"
               aria-label="Linkedin"
               rel="noopener noreferrer"
             >
               <FaLinkedin />
-            </SocialIconLink>
+            </SocialIconLink> */}
             <SocialIconLink
               href="mailto:natiivo2704@gmail.com"
               target="_blank"
