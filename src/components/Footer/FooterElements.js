@@ -10,7 +10,7 @@ export const FooterContainer = styled.div`
 `
 
 export const SocialMedia = styled.section`
-  max-width: 1000px;
+  max-width: 1200px;
   width: 100%;
 `
 
@@ -19,7 +19,7 @@ export const SocialMediaWrap = styled.div`
   justify-content: space-between;
   align-items: center;
   width: 90%;
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 20px auto;
 
   @media screen and (max-width: 820px) {

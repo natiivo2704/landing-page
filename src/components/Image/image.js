@@ -7,16 +7,12 @@ import "./image.css"
 
 const query = graphql`
   {
-    allFile {
+    allFile(sort: { order: ASC, fields: name }) {
       nodes {
         id
         name
         childImageSharp {
-          gatsbyImageData(
-            layout: CONSTRAINED
-            placeholder: BLURRED
-            formats: [AUTO]
-          )
+          gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED)
         }
       }
     }
@@ -27,19 +23,18 @@ const Image = () => {
   const {
     allFile: { nodes },
   } = useStaticQuery(query)
+  const gallerySize = nodes?.length
 
   const modalRef = useRef()
-
   const [selected, setSelected] = useState(null)
   const [showModal, setShowModal] = useState(false)
-
-  console.log("selected", selected)
-  console.log("showModal", showModal)
+  const [currIndex, setCurrIndex] = useState(null)
 
   const closeModal = e => {
     if (modalRef.current === e.target) {
       setShowModal(false)
       setSelected(null)
+      setCurrIndex(null)
     }
   }
 
@@ -47,9 +42,27 @@ const Image = () => {
     e => {
       if (e.key === "Escape" && showModal) {
         setShowModal(false)
+      } else if (e.key === "ArrowLeft" && showModal) {
+        if (currIndex > 0) {
+          setCurrIndex(currIndex - 1)
+          setSelected(nodes[currIndex - 1])
+        }
+      } else if (e.key === "ArrowRight" && showModal) {
+        if (currIndex < gallerySize - 1) {
+          setCurrIndex(currIndex + 1)
+          setSelected(nodes[currIndex + 1])
+        }
       }
     },
-    [setShowModal, showModal]
+    [
+      setShowModal,
+      showModal,
+      setSelected,
+      setCurrIndex,
+      currIndex,
+      gallerySize,
+      nodes,
+    ]
   )
 
   useEffect(() => {
@@ -78,7 +91,7 @@ const Image = () => {
         </div>
       ) : null}
       <div className="image-grid">
-        {nodes.map(image => {
+        {nodes.map((image, index) => {
           const { id, name } = image
           const pathToImage = getImage(image)
           return (
@@ -90,6 +103,7 @@ const Image = () => {
               onClick={() => {
                 setSelected(image)
                 setShowModal(true)
+                setCurrIndex(index)
               }}
             />
           )

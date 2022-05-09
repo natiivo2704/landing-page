@@ -14,8 +14,8 @@ export const Nav = styled.nav`
   position: sticky;
   top: 0;
   z-index: 999;
-  box-shadow: ${({ active }) =>
-    active ? "rgba(149, 157, 165, 0.2) 0px 8px 24px" : "none"};
+  /* box-shadow: ${({ active }) =>
+    active ? "rgba(149, 157, 165, 0.2) 0px 8px 24px" : "none"}; */
 
   @media screen and (max-width: 960px) {
     background: ${({ click }) => (click ? "white" : "transparent")};
@@ -29,7 +29,7 @@ export const NavbarContainer = styled.div`
   height: 80px;
   z-index: 1;
   width: 100%;
-  max-width: 1000px;
+  max-width: 1200px;
 `
 
 export const NavLogo = styled(Link)`
@@ -72,12 +72,15 @@ export const NavMenu = styled.ul`
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 50vh;
+    height: 80vh;
     position: absolute;
     top: ${({ click }) => (click ? "100%" : "-1000px")};
     opacity: 1;
-    transition: all 0.3s ease-out;
-    background: white;
+    transition: all 0.4s ease-out;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+      rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   }
 `
 
