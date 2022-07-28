@@ -55,7 +55,7 @@ const Navbar = () => {
               <NavItem>
                 <Button
                   primary
-                  href="https://www.vacasa.com/unit/82659"
+                  href="https://www.airbnb.com/rooms/657873824599504532"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

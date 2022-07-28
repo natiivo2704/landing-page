@@ -29,7 +29,7 @@ const Footer = () => {
             Natiivo 2704
           </SocialLogo>
           <WebsiteRights>
-            <OutboundLink href="https://www.vacasa.com/unit/82659">
+            <OutboundLink href="https://www.airbnb.com/rooms/657873824599504532">
               Natiivo 2704
             </OutboundLink>{" "}
             &copy; {new Date().getFullYear()}.
