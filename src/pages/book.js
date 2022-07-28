@@ -1,13 +1,11 @@
 import React from "react"
 import Layout from "../components/Layout/layout"
 import Seo from "../components/seo"
-import Image from "../components/Image/image"
 
-const Gallery = () => (
+const Book = () => (
   <Layout>
-    <Seo title="Gallery" />
-    <Image />
+    <Seo title="Book" />
   </Layout>
 )
 
-export default Gallery
+export default Book
